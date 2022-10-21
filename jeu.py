@@ -3,10 +3,11 @@ from lemming import Lemming
 from carte import Carte
 from time import sleep
 import signal
-import sys
-
 
 class Jeu:
+    '''
+    classe Jeu contient la carte du type Carte composée de case de type Case ,et la liste des lemmings de type Lemming
+    '''
     def __init__(self, filename):
         self.carte = Carte(filename)
         self.lemmings = []
