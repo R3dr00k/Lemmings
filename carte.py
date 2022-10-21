@@ -1,6 +1,11 @@
 from case import Case
 
 class Carte:
+    '''
+    [Definition]
+    La classe carte lit dans un fichier le labyrinthe et le stocke dans un tableau à double entrés.
+    '''
+    
     def __init__(self, filename):
         self.grotte = []
         count = 0
