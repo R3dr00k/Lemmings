@@ -2,6 +2,9 @@ from carte import Carte
 
 count = 0
 class Lemming:
+    '''
+    La class Lemming contient les lemming et une méthodes action qui permet déplacer les lemmings une fois
+    '''
     count = 0
     def __init__(self, pos, carte):
         Lemming.count += 1
@@ -26,7 +29,6 @@ class Lemming:
                 self.x += self.dir
                 if self.carte.arrivee(self.x,self.y, self):
                     return True
-
 
                 #print(f"Le lemming: {self.id} avance sur la case : ({self.x}, {self.y}) !")
 
